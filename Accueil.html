@@ -1,114 +1,119 @@
 <!DOCTYPE html>
-<html>
-    
-     <head>
-          <meta charset="utf-8">
-          <title>Association Le Patrimoine Tarnais</title>
-        <style>
-            body {
-     font-family: lato;
-     margin: 0;
-     display: grid;
-     grid-template-columns: 20vw 1fr;
-     grid-template-rows: 10vh 1fr 8vh;
-     grid-template-areas:
-       "header    navigation"
-       "content  content"
-       "footer    footer";
-   }
-   .navbar {
-     list-style: none;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-   }
-   header {
-     grid-area: header;
-     grid-column: 1 / 2;
-     grid-row: 1;
-   }
-   nav {
-     grid-area: navigation;
-     border-bottom: 1px solid;
-     display: block;
-   }
-   .content {
-     margin: 3rem;
-     grid-area: content;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 0.5fr 0.5fr 0.5fr;
-   }
-   footer {
-     grid-area: footer;
-     text-align: center;
-     border-top: 1px solid;
-   }
-   body {
-     font-family: lato;
-     margin: 0;
-     display: grid;
-     grid-template-columns: 20vw 1fr;
-     grid-template-rows: 10vh 1fr 8vh;
-     grid-template-areas:
-       "header    navigation"
-       "content  content"
-       "footer    footer";
-   }
-   .navbar {
-     list-style: none;
-     display:inline-flex;
-     grid-template-columns: 1fr 1fr 1fr;
-   }
-   header {
-     grid-area: header;
-     grid-column: 1 / 2;
-     grid-row: 1;
-   }
-   nav {
-     grid-area: navigation;
-     border-bottom: 1px solid;
-     display: inline-block;
-   }
-   .content {
-     margin: 3rem;
-     grid-area: content;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 0.5fr 0.5fr 0.5fr;
-   }
-   footer {
-     grid-area: footer;
-     text-align: center;
-     border-top: 1px solid;
-   }
-        </style>
-     </head>
-<body>
-    <header>
-            <nav>
-                <a href="C:\Users\manou\Documents\Studi\evaluation css\Page introduction.html">ACCUEIL</a>
-                <a href="#">AGENDA</a>
-                <a href="#">HISTOIRE</a>
-                <a href="#">LES INCONTOURNABLES</a>
-            </nav>
-            <navbar>
-            <div class="AppelOT">
-                <a href="33805400828" class="AppelOT-link"
-                   title="Service &amp; appel gratuits">
-                    <span class="AppelOT-tel"> Contact: +33 (0) 805 400 828</span>
-                 
-                </a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="container-fluid">
+<div class="row">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Le patrimoine Tarnais</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Coin Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carnet d'adresses</a>
+                    </li>
+                </ul>
             </div>
-            </navbar>
-    </header>
-   <img src="artisans-commerces-acheter-local.jpg" style="width:100%; height:50%">
-    <h1>
-<p class="title">Introduction</p>
-</h1>
-<h3>
- <p class= text-justify>
-    Le patrimoine est un aspect important de notre territoire, l'Histoire vivante. Celui-ci doit être gardé, protégé et transmis aux prochaines génération. Notre association s'occupe de protéger les monuments importants de la région ainsi que d'informer la population sur la richesse de notre territoire.
-    Nous organisons régulièrement des évènements, tels des interventions dans des lycées, des randonnées autour de l'Histoire ou des visites guidées aux lanternes de sites et bien d'autres... Les inscriptions aux événements pouvent être trouvés dans l'agenda.
-    </p>
-</h3>
+        </nav>
+    </div>
+</div>
+<div class="row">
+    <nav class="col-12" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">Agenda</a></li>
+            
+        </ol>
+    </nav>
+</div>
+
+<main>
+    <div class="row row-cols-1 row-cols-sm-7">
+        <section class="col">
+            <h2>L'Association</h2>
+            <div class="card">
+                <img src="chateau de Mauriac.jpg" class="card-img-top rounded-lg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">L'Association</h5>
+                    <p class="card-text">
+                        <svg class="bi bi-map" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M15.817.613A.5.5 0 0116 1v13a.5.5 0 01-.402.49l-5 1a.502.502 0 01-.196 0L5.5 14.51l-4.902.98A.5.5 0 010 15V2a.5.5 0 01.402-.49l5-1a.5.5 0 01.196 0l4.902.98 4.902-.98a.5.5 0 01.415.103zM10 2.41l-4-.8v11.98l4 .8V2.41zm1 11.98l4-.8V1.61l-4 .8v11.98zm-6-.8V1.61l-4 .8v11.98l4-.8z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                        Au Chateau Mauriac
+                    </p>
+                    <p class="card-text">
+                        <svg class="bi bi-calendar-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2a2 2 0 012-2h12a2 2 0 012 2H0z"/>
+                            <path fill-rule="evenodd" d="M0 3h16v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3zm6.5 4a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm-8 2a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm-8 2a1 1 0 11-2 0 1 1 0 012 0zm2 1a1 1 0 100-2 1 1 0 000 2zm4-1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"/>
+                        </svg>
+                        A 15h
+                    </p>
+                    <p class="card-text">
+                        Le patrimoine est un aspect important de notre territoire, l'Histoire vivante. Celui-ci doit être gardé, protégé et transmis aux prochaines génération. Notre association s'occupe de protéger les monuments importants de la région ainsi que d'informer la population sur la richesse de notre territoire.
+                        Nous organisons régulièrement des évènements, tels des interventions dans des lycées, des randonnées autour de l'Histoire ou des visites guidées aux lanternes de sites et bien d'autres... Les inscriptions aux événements pouvent être trouvés dans l'agenda..
+                    </p>
+                    <img src="Cordes vue d'en haut.jpg" alt="">
+                </div>
+            </div>
+            <div class="row row-cols-0,5 row-cols-sm-7">
+                <section class="col">
+                  <h2>Les prochains évènements</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <p class="card-text">
+                              Attention: seuls les inscriptions aux évènements passé par le site sont comptées.
+                              
+                                <strong>Lundi 3 Août::</strong>
+                                    
+                                    Visite du Chateau de Mauriac à 15h
+                                    Visite guidée aux lanternes de Cordes sur Ciel à 20h
+                                <strong>Vendredi 5 Août:</strong>
+                                
+                                       - Marché de Gaillac à partir de 9h
+                                       - Apéro-concert à partir de 19h
+                                    
+                                    <strong>Lundi 3 Août:</strong>
+                                    -Workshop archéologie à l'archéosite de Montans à 10h</p>
+                                 
+                                <p>Et bien plus...</p>
+        
+                                <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
+                            
+                            <p class="card-text">
+                                <svg class="bi bi-person-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
+                                    <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                                </svg>
+                                <a href="mailto:accueilpatrimoinetarnais@gmail.com">accueilpatrimoinetarnais@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                  </main>
+                  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+</html>
